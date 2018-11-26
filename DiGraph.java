@@ -9,7 +9,7 @@ import java.util.*;
 
 public class DiGraph {
 
-    private LinkedList<Integer>[] arr;
+    private static LinkedList<Integer>[] arr;
 
     /* DiGraph constructor initialized */
     public DiGraph(int N) {
@@ -24,7 +24,7 @@ public class DiGraph {
      * to be added to the graph
      * // "to" vertex is added as "from" vertex's neighbor
      */
-    public void addEdge(int from, int to) {
+    public static void addEdge(int from, int to) {
         // the edge should NOT be added if it already exists (check before adding)
         // vertex-numbers are given in natural numbering (start with 1)
         //      so turn them into Java-indexing to reflect correct connection
@@ -36,17 +36,17 @@ public class DiGraph {
      * to be deleted from the graph
      * // "to" vertex is removed as "from" vertex's neighbor
      */
-    public void deleteEdge(int from, int to) {
+    public static void deleteEdge(int from, int to) {
         // nothing is done if such edge doesn't exist
         // NO ERROR MESSAGE OR EXCEPTION
     }
 
     /* computes and returns the number of edges in the graph */
-    public int edgeCount() {
+    public static int edgeCount() {
     }
     
     /* returns the number of vertices in the graph (the array's length) */
-    public int vertexCount() {
+    public static int vertexCount() {
         return arr.length;
     }
 
@@ -57,6 +57,6 @@ public class DiGraph {
      * where x1,...,xk are vertices that are adjacent to i
      * // number of vertices should be natural indexing
      */
-    public void print() {
+    public static void print() {
     }
 }
