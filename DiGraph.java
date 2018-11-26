@@ -25,10 +25,6 @@ public class DiGraph {
      * // "to" vertex is added as "from" vertex's neighbor
      */
     public static void addEdge(int from, int to) {
-        // the edge should NOT be added if it already exists (check before adding)
-        // vertex-numbers are given in natural numbering (start with 1)
-        //      so turn them into Java-indexing to reflect correct connection
-        //      NO NEED FOR VALIDITY CHECK
     }
 
     /* 
@@ -37,8 +33,6 @@ public class DiGraph {
      * // "to" vertex is removed as "from" vertex's neighbor
      */
     public static void deleteEdge(int from, int to) {
-        // nothing is done if such edge doesn't exist
-        // NO ERROR MESSAGE OR EXCEPTION
     }
 
     /* computes and returns the number of edges in the graph */
